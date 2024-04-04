@@ -2,7 +2,7 @@
 As the name suggests, it's our mini-project for the sorting lab.
 
 Author: Candice Lu
-Description: A lab that includes implementation of MergeSort, InsertionSort, QuickSort, and my own sort, LuCandiceSort. New unit tests are also added to the SortTester class.
+Description: A lab that includes implementation of MergeSort, InsertionSort, QuickSort, and my own sort, LuCandiceSort and an updated version, LuCandiceNewSort, which runs slightly faster. New unit tests are also added to the SortTester class.
 Acknowledgements:
     Peer: Julian Kim (for LuCandiceSort ideas and debugging tutorials)
     Online resources: Big-O cheatsheet (https://www.bigocheatsheet.com/),
