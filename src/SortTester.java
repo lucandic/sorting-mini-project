@@ -105,4 +105,19 @@ public class SortTester {
     assertArrayEquals(original, expected);
   } // orderedIntegerTest
 
+  @Test
+  public void lotsOfReverseIntegerTest() {
+    final int size = 10000;
+    Integer[] original = new Integer[size];
+    for (int i = 0; i < size; i++) {
+      original[i] = size - 1 - i;
+    }
+    Integer[] expected = new Integer[size];
+    for (int i = 0; i < size; i++) {
+      expected[i] = i;
+    }
+    sorter.sort(original, (x, y) -> x.compareTo(y));
+    assertArrayEquals(original, expected);
+  } // lotsOfReverseIntegerTest
+
 } // class SortTester
