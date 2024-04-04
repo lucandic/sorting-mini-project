@@ -4,7 +4,7 @@ import java.util.Comparator;
 public class LuCandiceSort implements Sorter{
 
 /**
- * A quicker version of Insertion sort.
+ * A quicker sort that utilizes both insertion sort and merge sort based on specific conditions.
  * Basic idea:
  *   First check if array is completely reversed. In this case we simply flip it.
  *   Second we see if length of array is less than ten or there are over ten consecutive elements that are completely reversed. In this case we use Quicksort.
