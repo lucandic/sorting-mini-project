@@ -37,7 +37,7 @@ public class LuCandiceNewSort implements Sorter{
    * Create a sorter.
    */
   LuCandiceNewSort() {
-  } // LuCandiceSort()
+  } // LuCandiceNewSort()
 
   // +---------+-----------------------------------------------------
   // | Methods |
@@ -89,7 +89,7 @@ public class LuCandiceNewSort implements Sorter{
       output.addAll(bucket);
     }
     values = (T[]) output.toArray();
-  } // sort(T[], Comparator<? super T>
+  } // sort(T[], Comparator<? super T>)
 
   // +-----------------+----------------------------------------------
   // | Private Methods |
@@ -104,7 +104,7 @@ public class LuCandiceNewSort implements Sorter{
         return;
     }
     insertionSort(values, order);
-  } // luCandiceSort(T[], Comparator<? super T>
+  } // luCandiceSort(T[], Comparator<? super T>)
 
   public <T> void insertionSort(T[] values, Comparator<? super T> order) {
     int cur = 1;
@@ -112,7 +112,7 @@ public class LuCandiceNewSort implements Sorter{
       swap(values, order, cur);
       cur++;
     }
-  } // sort(T[], Comparator<? super T>
+  } // insertionSort(T[], Comparator<? super T>
 
   public <T> void quickSort(T[] values, Comparator<? super T> order, int lo, int hi) {
     if (hi - lo <= 1) {
@@ -122,7 +122,7 @@ public class LuCandiceNewSort implements Sorter{
       int pivot = partition(values, order, lo, hi);
       quickSort(values, order, lo, pivot);
       quickSort(values, order, pivot, hi);
-  } // sort(T[], Comparator<? super T>
+  } // quickSort(T[], Comparator<? super T>
 
   /*
    * Checks to see if there are more than ten consecutive terms that are completely reversed

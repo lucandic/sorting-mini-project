@@ -1,13 +1,8 @@
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.fail;
-import java.util.Arrays;
-import org.junit.Test;
-
-public class LuCandiceSortTester extends SortTester{
-
 /**
  * Tests of LuCandiceSort.
  */
+
+public class LuCandiceSortTester extends SortTester{
 
 // +--------------+------------------------------------------------
 // | Constructors |
