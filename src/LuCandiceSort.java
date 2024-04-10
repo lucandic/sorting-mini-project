@@ -41,10 +41,10 @@ public class LuCandiceSort implements Sorter{
         return;
     }
     if (checkTenReverse(values, order) || values.length <= 10) {
-        quickSort(values, order, 0, values.length);
+        insertionSort(values, order);
         return;
     }
-    insertionSort(values, order);
+    quickSort(values, order, 0, values.length);
   } // sort(T[], Comparator<? super T>
 
   // +-----------------+----------------------------------------------
